@@ -29,16 +29,20 @@ public class CollectNewspaperKarel extends Karel {
 		move();
 		putBeeper();
 		turnLeft();
-		for(int i=0; i < 6; i++){
-			move();
-		}
+//		for(int i=0; i < 6; i++){
+//			move();
+//		}
+		moveForward(6);
+	}
+	
+	private void moveForward(int x){
+		
 	}
 	
 	private void turnRight(){
 		turnLeft();
 		turnLeft();
 		turnLeft();
-	
 	}
 
 }
