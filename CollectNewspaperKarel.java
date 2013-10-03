@@ -16,8 +16,7 @@ public class CollectNewspaperKarel extends Karel {
 	
 	// You fill in this part
 	public void run(){
-		move();
-		move();
+		moveForward(2);
 		turnRight();
 		move();
 		turnLeft();
@@ -25,20 +24,20 @@ public class CollectNewspaperKarel extends Karel {
 		pickBeeper();
 		move();
 		turnLeft();
-		move();
-		move();
+		moveForward(2);
 		putBeeper();
 		turnLeft();
 		moveForward(6);
 	}
-	
+
+	// method for having Karel move forward a passed number of steps
 	private void moveForward(int x){
 		for(int i=0; i < x; i++){			
 			move();
-		}
-		
+		}	
 	}
-	
+
+	// method for having Karel turn right	
 	private void turnRight(){
 		turnLeft();
 		turnLeft();
