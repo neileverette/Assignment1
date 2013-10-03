@@ -21,35 +21,23 @@ public class CollectNewspaperKarel extends Karel {
 
 	
 	
-// These are my custom methods	
-	
-	// moves karel to the paper
-	private void moveToPaper(){
+	// These are my custom methods	
 		
-	}
-	
-	// karel picks up the paper
-	private void pickUpPaper(){
+		// moves karel to the paper
+		private void moveToPaper(){
+			
+		}
 		
-	}
-	
-	// karel returns to original location
-	private void pickUpPaper(){
+		// karel picks up the paper
+		private void pickUpPaper(){
+			
+		}
 		
-	}
-	
-	// method for having Karel move forward a passed number of steps
-	private void moveForward(int x){
-		for(int i=0; i < x; i++){			
-			move();
-		}	
-	}
+		// karel returns to original location
+		private void returnToOrigin(){
+			
+		}
 
-	// method for having Karel turn right	
-	private void turnRight(){
-		turnLeft();
-		turnLeft();
-		turnLeft();
-	}
+
 
 }
