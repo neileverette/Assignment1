@@ -17,19 +17,26 @@ public class CollectNewspaperKarel extends Karel {
 	// You fill in this part
 	public void run(){
 
-
 	}
 
-	// moves karel to the paper
-	private void moveToPaper(){
-		
-	}
+	
+	
+// These are my custom methods	
 	
 	// moves karel to the paper
 	private void moveToPaper(){
 		
 	}
 	
+	// karel picks up the paper
+	private void pickUpPaper(){
+		
+	}
+	
+	// karel returns to original location
+	private void pickUpPaper(){
+		
+	}
 	
 	// method for having Karel move forward a passed number of steps
 	private void moveForward(int x){
