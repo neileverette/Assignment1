@@ -12,10 +12,21 @@ import stanford.karel.*;
 
 public class CollectNewspaperKarel extends Karel {
 	
+	//
+	
 	// You fill in this part
 	public void run(){
-		
+		move();
+		move();
 		turnRight();
+		move();
+		pickBeeper();
+		move();
+		move();
+		turnLeft();
+		move();
+		move();
+		putBeeper()
 	}
 	
 	private void turnRight(){
