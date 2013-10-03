@@ -36,6 +36,9 @@ public class CollectNewspaperKarel extends Karel {
 	}
 	
 	private void moveForward(int x){
+		for(int i=0; i < x; i++){			
+			move();
+		}
 		
 	}
 	
