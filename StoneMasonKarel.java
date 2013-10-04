@@ -37,7 +37,7 @@ public class StoneMasonKarel extends SuperKarel {
 			checkColumn();
 		}
 		
-		if(frontIsClear()){
+		if(frontIsBlocked()){
 			if(facingEast()){
 				turnRight();
 			}else if(facingWest()){
