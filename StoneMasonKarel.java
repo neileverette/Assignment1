@@ -47,7 +47,7 @@ public class StoneMasonKarel extends SuperKarel {
 					move();
 				}
 				turnAround();
-				startMove();
+				startMoving();
 				
 			// Checks to see if Karel is pointing down
 			}else if(facingSouth()){
