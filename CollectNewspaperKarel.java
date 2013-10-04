@@ -24,15 +24,17 @@ public class CollectNewspaperKarel extends Karel {
 		while(frontIsClear()){
 			move();
 		}
+		
 		turnRight();
 		move();
 		turnLeft();
 		move();
-		pickBeeper();
 		
 	}
 	private void pickUp(){
-		
+		if(beepersPresent()){
+			pickBeeper();
+		}
 	}
 	
 	private void returnHome(){
