@@ -22,6 +22,8 @@ public class CollectNewspaperKarel extends Karel {
 	
 	
 	// These are my custom methods	
+	
+		move();
 		
 		// moves karel to the paper
 		private void moveToPaper(){
