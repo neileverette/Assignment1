@@ -42,6 +42,8 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 			checkColumn();
 		}
+		// Once Karel becomes blocked, find out how he's being blocked
+		unblockKarel();
 	}
 	
 	// Check for column
