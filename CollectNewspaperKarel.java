@@ -19,6 +19,7 @@ public class CollectNewspaperKarel extends Karel {
 
 	}
 	// These are my custom methods	
+	move();
 	
 
 
