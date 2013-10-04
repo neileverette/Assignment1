@@ -17,11 +17,27 @@ public class CollectNewspaperKarel extends Karel {
 	
 	public void run(){
 		
-		move();
-		move();
-		turnLeft();
-		turnLeft();
-		move();
+		getPaper();
 	}
-
+	
+	private void getPaper(){
+		while(frontIsClear()){
+			move();
+		}
+		turnRight();
+		
+	}
+	private void pickUp(){
+		
+	}
+	
+	private void returnHome(){
+		
+	}
+	
+	private void turnRight(){
+		turnLeft();
+		turnLeft();
+		turnLeft();
+	}
 }
