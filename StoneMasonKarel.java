@@ -29,15 +29,9 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 	
-	// Moves Karel up and down the grid
-	private void startMoving(){
-		
-		moveForward();
 
-	}
-	
 	// Moves Karel Forward
-	private void moveForward(){
+	private void startMoving(){
 		while(frontIsClear()){
 			move();
 			checkColumn();
