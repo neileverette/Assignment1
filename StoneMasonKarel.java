@@ -16,7 +16,7 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){
 		facingDirection();
 		startMoving();
-		unblockKarel();
+
 	}
 	
 	// Checks to see if Karel is in the proper direction
