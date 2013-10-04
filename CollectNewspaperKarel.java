@@ -18,29 +18,8 @@ public class CollectNewspaperKarel extends Karel {
 	public void run(){
 
 	}
-
-	
-	
 	// These are my custom methods	
 	
-		move();
-		move();
-		turnLeft();
-		
-		// moves karel to the paper
-		private void moveToPaper(){
-			
-		}
-		
-		// karel picks up the paper
-		private void pickUpPaper(){
-			
-		}
-		
-		// karel returns to original location
-		private void returnToOrigin(){
-			
-		}
 
 
 
