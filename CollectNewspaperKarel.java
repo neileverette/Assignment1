@@ -34,14 +34,22 @@ public class CollectNewspaperKarel extends Karel {
 		if(beepersPresent()){
 			pickBeeper();
 		}
+		turnAround();
 	}
 	
 	private void returnHome(){
 		
 	}
-	
+
+	// Turn right function
 	private void turnRight(){
 		turnLeft();
+		turnLeft();
+		turnLeft();
+	}
+	
+	// Turn around function
+	private void turnAround(){
 		turnLeft();
 		turnLeft();
 	}
