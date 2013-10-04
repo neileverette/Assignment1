@@ -23,10 +23,7 @@ public class CollectNewspaperKarel extends Karel {
 	}
 	
 	private void getPaper(){
-		while(frontIsClear()){
-			move();
-		}
-		
+		moveForward();
 		turnRight();
 		move();
 		turnLeft();
@@ -47,5 +44,13 @@ public class CollectNewspaperKarel extends Karel {
 		turnLeft();
 		turnLeft();
 		turnLeft();
+	}
+	
+	// Moves Karel forward until there is a wall
+	private void moveForward(){
+		while(frontIsClear()){
+			move();
+		}
+		
 	}
 }
