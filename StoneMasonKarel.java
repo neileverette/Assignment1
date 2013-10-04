@@ -38,9 +38,9 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 		
 		if(frontIsBlocked()){
-			if(facingEast()){
+			if(facingNorth()){
 				turnRight();
-			}else if(facingWest()){
+			}else if(facingSouth()){
 				turnLeft();
 			}
 	
