@@ -36,6 +36,15 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 			checkColumn();
 		}
+		
+		if(frontIsClear()){
+			if(facingEast()){
+				turnRight();
+			}else if(facingWest()){
+				turnLeft();
+			}
+	
+		}
 	}
 
 	// Check for column
