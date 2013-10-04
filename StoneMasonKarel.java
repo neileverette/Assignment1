@@ -34,12 +34,33 @@ public class StoneMasonKarel extends SuperKarel {
 		moveForward();
 
 		
+
+		
+		
+
+	}
+	
+	// Moves Karel Forward
+	private void moveForward(){
+		while(frontIsClear()){
+			move();
+			checkColumn();
+		}
+	}
+	
+	// Check for column
+	private void checkColumn(){
+		if(beepersPresent()==true){	
+		}
+	}
+	
+	// Unblock Karel
+	private void unblockKarel(){
 		// Checks to see if Karel has blocks on left, top and right
 		if (frontIsBlocked() && rightIsBlocked()){
 			turnAround();
 			startMoving();
 		}
-		
 		
 		if(frontIsBlocked()){			
 			// Checks to see if Karel is pointing up
@@ -62,24 +83,9 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 	
 		}
+		
 	}
-	
-	// Moves Karel Forward
-	private void moveForward(){
-		while(frontIsClear()){
-			move();
-			checkColumn();
-		}
-	}
-	
 
-	// Check for column
-	private void checkColumn(){
-		if(beepersPresent()==true){	
-		}
-	}
-	
-	
 	
 	// 
 
