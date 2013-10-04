@@ -35,6 +35,7 @@ public class CollectNewspaperKarel extends Karel {
 			pickBeeper();
 		}
 		turnAround();
+		moveForward();
 	}
 	
 	private void returnHome(){
