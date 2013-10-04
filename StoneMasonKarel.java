@@ -16,6 +16,7 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){
 		facingDirection();
 		startMoving();
+		unblockKarel();
 	}
 	
 	// Checks to see if Karel is in the proper direction
@@ -32,11 +33,6 @@ public class StoneMasonKarel extends SuperKarel {
 	private void startMoving(){
 		
 		moveForward();
-
-		
-
-		
-		
 
 	}
 	
@@ -60,9 +56,7 @@ public class StoneMasonKarel extends SuperKarel {
 		if (frontIsBlocked() && rightIsBlocked()){
 			turnAround();
 			startMoving();
-		}
-		
-		if(frontIsBlocked()){			
+		}else if(frontIsBlocked()){			
 			// Checks to see if Karel is pointing up
 			if(facingNorth()){
 				turnRight();
