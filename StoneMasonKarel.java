@@ -34,13 +34,14 @@ public class StoneMasonKarel extends SuperKarel {
 		// Move Karel forward as long as he's clear
 		while(frontIsClear()){
 			move();
+			checkColumn();
 		}
 	}
 
-
 	// Check for column
 	private void checkColumn(){
-		if(beepersPresent()==false){
+		if(beepersPresent()==true){
+			
 		}
 	}
 	
