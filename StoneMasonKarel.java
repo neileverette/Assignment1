@@ -17,11 +17,18 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){
 		
 		turnLeft();
+		moveForward();
 		
 	}
 	
 	private void clearLeft(){
 		
+	}
+	
+	private void moveForward(){
+		while(frontIsClear()){
+			move();
+		}
 	}
 
 }
