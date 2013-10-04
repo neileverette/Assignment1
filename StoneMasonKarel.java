@@ -19,5 +19,9 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 		
 	}
+	
+	private void clearLeft(){
+		
+	}
 
 }
