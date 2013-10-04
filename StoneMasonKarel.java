@@ -18,9 +18,7 @@ public class StoneMasonKarel extends SuperKarel {
 		startMoving();
 	}
 	
-	
-
-	// checks to see if the Karel is facing East or West
+	// Checks to see if Karel is in the proper direction
 	private void facingDirection(){
 		if(facingEast()){
 			turnLeft();
@@ -30,19 +28,21 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 	
-	// the moves Karel up and down the grid
+	// Moves Karel up and down the grid
 	private void startMoving(){
-		boolean column = false;
 		
+		// Move Karel forward as long as he's clear
 		while(frontIsClear()){
 			move();
-				if(beepersPresent()){
-					
-				}
 		}
 	}
-	
-	
+
+
+	// Check for column
+	private void checkColumn(){
+		if(beepersPresent()==false){
+		}
+	}
 	
 	// basic move forward function
 	private void moveForward(){
@@ -51,11 +51,4 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 
-	// checks to see if there is a column
-	private void checkColumn(){
-		moveForward();
-		if(beepersPresent()==false){
-			}
-	
-	}
 }
