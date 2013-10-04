@@ -15,6 +15,7 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	public void run(){
 		facingDirection();
+		startMoving();
 	}
 	
 	
@@ -28,6 +29,15 @@ public class StoneMasonKarel extends SuperKarel {
 			turnLeft();
 		}
 	}
+	
+	// the moves Karel up and down the grid
+	private void startMoving(){
+		while(frontIsClear()){
+			move();
+		}
+	}
+	
+	
 	
 	// basic move forward function
 	private void moveForward(){
