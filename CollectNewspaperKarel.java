@@ -12,8 +12,6 @@ import stanford.karel.*;
 
 public class CollectNewspaperKarel extends Karel {
 	
-
-	// You fill in this part
 	
 	public void run(){
 		getPaper();
@@ -38,6 +36,8 @@ public class CollectNewspaperKarel extends Karel {
 	}
 	
 	private void returnHome(){
+		turnRight();
+		moveForward();
 		
 	}
 
