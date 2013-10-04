@@ -19,7 +19,9 @@ public class CollectNewspaperKarel extends Karel {
 		
 		move();
 		move();
-		
+		turnLeft();
+		turnLeft();
+		turnLeft();
 	}
 
 }
