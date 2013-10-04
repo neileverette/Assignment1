@@ -32,8 +32,13 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	// the moves Karel up and down the grid
 	private void startMoving(){
+		boolean column = false;
+		
 		while(frontIsClear()){
 			move();
+				if(beepersPresent()){
+					
+				}
 		}
 	}
 	
