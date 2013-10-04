@@ -37,7 +37,14 @@ public class StoneMasonKarel extends SuperKarel {
 			checkColumn();
 		}
 		
-		if(frontIsBlocked()){
+		// Checks to see if Karel has blocks on left, top and right
+		if (frontIsBlocked() && leftIsBlocked() && rightIsBlocked()){
+			turnAround();
+			startMoving();
+		}
+		
+		
+		if(frontIsBlocked()){			
 			// Checks to see if Karel is pointing up
 			if(facingNorth()){
 				turnRight();
