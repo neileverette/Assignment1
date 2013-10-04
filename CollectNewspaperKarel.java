@@ -18,6 +18,8 @@ public class CollectNewspaperKarel extends Karel {
 	public void run(){
 		
 		getPaper();
+		pickUp();
+		returnHome();
 	}
 	
 	private void getPaper(){
