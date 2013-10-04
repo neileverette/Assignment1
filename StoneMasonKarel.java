@@ -31,11 +31,8 @@ public class StoneMasonKarel extends SuperKarel {
 	// Moves Karel up and down the grid
 	private void startMoving(){
 		
-		// Move Karel forward as long as he's clear
-		while(frontIsClear()){
-			move();
-			checkColumn();
-		}
+		moveForward();
+
 		
 		// Checks to see if Karel has blocks on left, top and right
 		if (frontIsBlocked() && rightIsBlocked()){
@@ -66,19 +63,24 @@ public class StoneMasonKarel extends SuperKarel {
 	
 		}
 	}
-
-	// Check for column
-	private void checkColumn(){
-		if(beepersPresent()==true){
-			
-		}
-	}
 	
-	// basic move forward function
+	// Moves Karel Forward
 	private void moveForward(){
 		while(frontIsClear()){
 			move();
+			checkColumn();
 		}
 	}
+	
+
+	// Check for column
+	private void checkColumn(){
+		if(beepersPresent()==true){	
+		}
+	}
+	
+	
+	
+	// 
 
 }
