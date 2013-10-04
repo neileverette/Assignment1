@@ -12,23 +12,36 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	// You fill in this part
 	
 	public void run(){
-		
 		turnLeft();
 		moveForward();
-		
 	}
 	
-	private void clearLeft(){
-		
+	
+
+	// checks to see if the Karel is facing East or West
+	private void facingDirection(){
+		if(facingEast()){
+			turnLeft();
+		}else if (facingWest()){
+			turnLeft();
+			turnLeft();
+		}
 	}
 	
+	// basic move forward function
 	private void moveForward(){
 		while(frontIsClear()){
 			move();
 		}
 	}
 
+	// checks to see if there is a column
+	private void checkColumn(){
+		moveForward();
+		if(beepersPresent()==false){
+			}
+	
+	}
 }
