@@ -40,7 +40,7 @@ public class StoneMasonKarel extends SuperKarel {
 	// Check for beepers
 	private void checkForBeepers(){
 		if (beepersPresent()){
-			// do somethign
+			// do something
 		}
 	}
 	
