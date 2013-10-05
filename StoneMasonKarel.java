@@ -12,16 +12,17 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	public void run(){
+	public void run(){	
+		
 		orientKarel();
-		//moveForward();
+		moveForward();
 
 	}
 	
 	// Orients Karel in space
 	private void orientKarel(){
 		// This handles the initial state of Karel
-		if (facingEast() && rightIsClear()){
+		if (facingEast() && frontIsClear()){
 			turnLeft();
 		// This handles the ending position	
 		}else if (facingEast() && rightIsBlocked()){
