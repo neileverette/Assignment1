@@ -70,13 +70,13 @@ public class StoneMasonKarel extends SuperKarel {
 				turnLeft();
 				move();
 				orientKarel();
-				moveForward()
+				moveForward();
 			}else{
 				// Move Karel to the next row and start the sequence again
 				turnLeft();
 				move();
 				orientKarel();
-				moveForward()
+				moveForward();
 			}
 		}
 		
