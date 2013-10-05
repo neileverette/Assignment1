@@ -13,6 +13,8 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run(){	
+		boolean beepers = false;
+		
 		
 		orientKarel();
 		moveForward();
@@ -35,5 +37,21 @@ public class StoneMasonKarel extends SuperKarel {
 		while(frontIsClear()){
 			move();
 		}
+		
+	}
+
+	// Check for beepers
+	private void checkForBeepers(){
+		if (beepersPresent()){
+			boolean beepers = true;
+			return beepers;
+		}
+	}
+	
+	// Turns Karel around
+	private void turnKarelAround(){
+		
 	}
 }
+
+
