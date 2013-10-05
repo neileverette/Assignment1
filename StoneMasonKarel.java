@@ -14,10 +14,6 @@ public class StoneMasonKarel extends SuperKarel {
 
 	public void run(){
 		//orientKarel();
-		
-		if(leftIsBlocked()==false){
-			turnLeft();
-		}
 		//moveForward();
 
 	}
@@ -25,7 +21,7 @@ public class StoneMasonKarel extends SuperKarel {
 	// Orients Karel in space
 	private void orientKarel(){
 		// This handles the initial state of Karel
-		if (leftIsBlocked()){
+		if (facingEast() && rightIsClear()){
 			turnLeft();
 		// This handles the ending position	
 		}else if (facingEast() && rightIsBlocked()){
