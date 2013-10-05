@@ -34,6 +34,9 @@ public class StoneMasonKarel extends SuperKarel {
 		while(frontIsClear()){
 			move();
 		}
+		// At the end of a row, turn Karel around
+		turnKarelAround();
+		layBeepers();
 		
 	}
 
@@ -46,7 +49,24 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	// Turns Karel around
 	private void turnKarelAround(){
-		
+		turnLeft();
+		turnLeft();
+	}
+	
+	private void layBeepers(){
+		// Runs Karel forward
+		while(frontIsClear()){
+			// If beeper present, skip
+			if(beepersPresent()){
+				move();
+			// If beeper not present, lay one down
+			}else if(noBeepersPresent()){
+				putBeeper();
+				move();
+			}// Moves Karel to the next column
+			turnLeft();
+			move();
+		}
 	}
 }
 
