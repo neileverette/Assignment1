@@ -64,6 +64,8 @@ public class StoneMasonKarel extends SuperKarel {
 				}else if(facingSouth()){
 					sequence3();
 				}
+			}else if (facingEast() && frontIsBlocked()){
+				stop();
 			}
 		}startMoving();
 		
