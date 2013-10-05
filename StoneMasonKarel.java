@@ -86,10 +86,9 @@ public class StoneMasonKarel extends SuperKarel {
 	// Turns Karel around
 	private void sequence3(){
 		turnLeft();
-		if(frontIsBlocked()){
+		if(frontIsClear()){
 			move();
 		}
-		
 		turnLeft();
 		startMoving();
 	}
