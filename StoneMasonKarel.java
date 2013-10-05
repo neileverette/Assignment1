@@ -12,10 +12,7 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	public void run(){	
-		boolean beepers = false;
-		
-		
+	public void run(){			
 		orientKarel();
 		moveForward();
 
@@ -43,8 +40,7 @@ public class StoneMasonKarel extends SuperKarel {
 	// Check for beepers
 	private void checkForBeepers(){
 		if (beepersPresent()){
-			boolean beepers = true;
-			return beepers;
+			// do somethign
 		}
 	}
 	
