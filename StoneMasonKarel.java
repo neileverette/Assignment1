@@ -67,20 +67,19 @@ public class StoneMasonKarel extends SuperKarel {
 		if(frontIsBlocked()){
 			if(noBeepersPresent()){
 				putBeeper();
-				turnLeft();
-				move();
-				orientKarel();
-				moveForward();
+				restartKarel();
 			}else{
 				// Move Karel to the next row and start the sequence again
-				turnLeft();
-				move();
-				orientKarel();
-				moveForward();
+				restartKarel();
 			}
 		}
-		
-		
+	}
+	// This restarts the sequence of Karel going up a row
+	private void restartKarel(){
+		turnLeft();
+		move();
+		turnLeft();
+		moveForward();
 	}
 }
 
