@@ -15,7 +15,7 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){
 		//orientKarel();
 		
-		if(leftIsBlocked()){
+		if(leftIsBlocked()==true){
 			turnLeft();
 		}
 		//moveForward();
