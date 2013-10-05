@@ -35,7 +35,8 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 		// At the end of a row, turn Karel around
-		turnKarelAround();
+		turnAround();
+		// Start laying beepers down
 		layBeepers();
 		
 	}
@@ -46,12 +47,7 @@ public class StoneMasonKarel extends SuperKarel {
 			// do something
 		}
 	}
-	
-	// Turns Karel around
-	private void turnKarelAround(){
-		turnLeft();
-		turnLeft();
-	}
+
 	
 	private void layBeepers(){
 		// Runs Karel forward
@@ -62,11 +58,24 @@ public class StoneMasonKarel extends SuperKarel {
 			// If beeper not present, lay one down
 			}else if(noBeepersPresent()){
 				putBeeper();
-			}// Moves Karel to the next column
-			
+			}
+			// Moves Karel down one
 			move();
 		}
-		turnLeft();
+		
+		// Handles the end of the row condition
+		if(frontIsBlocked()){
+			if(noBeepersPresent()){
+				putBeeper();
+			}else{
+				// Move Karel to the next row and start the sequence again
+				turnLeft();
+				move();
+				orientKarel();
+			}
+		}
+		
+		
 	}
 }
 
