@@ -17,10 +17,17 @@ public class StoneMasonKarel extends SuperKarel {
 
 	}
 	
+	// Orients Karel on initiation
 	private void orientKarel(){
 		if (facingEast()){
 			turnLeft();
+		}	
 	}
 	
+	// Moves Karel forward
+	private void moveForward(){
+		while(frontIsClear()){
+			move();
+		}
 	}
 }
