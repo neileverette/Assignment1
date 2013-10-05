@@ -31,24 +31,32 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	// Moves Karel forward
 	private void moveForward(){
+		
+		// Set a boolean for column
+		boolean beepers = false;
+		
 		while(frontIsClear()){
 			move();
 		}
 		// At the end of a row, turn Karel around
 		turnAround();
-		// Start laying beepers down
-		layBeepers();
+		
+		// This sets up 2 paths for Karel, depending on if he encounters beepers
+		// First path is for no beepers
+
 		
 	}
 
-	// Check for beepers
-	private void checkForBeepers(){
-		if (beepersPresent()){
-			// do something
-		}
-	}
-
 	
+	// This functions is for empty rows
+	private void dontLayBeepers(){
+		while(frontIsClear()){
+			move();
+		}
+		restartKarel();
+	}
+	
+	// This function is for rows with beepers
 	private void layBeepers(){
 		// Runs Karel forward
 		while(frontIsClear()){
@@ -74,6 +82,7 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 		}
 	}
+	
 	// This restarts the sequence of Karel going up a row
 	private void restartKarel(){
 		turnLeft();
