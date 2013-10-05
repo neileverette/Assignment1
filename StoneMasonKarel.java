@@ -12,11 +12,9 @@ import stanford.karel.*;
 
 public class StoneMasonKarel extends SuperKarel {
 
-	
 	public void run(){
 		facingDirection();
 		startMoving();
-
 	}
 	
 	// Checks to see if Karel is in the proper direction
@@ -27,14 +25,12 @@ public class StoneMasonKarel extends SuperKarel {
 			turnLeft();
 			turnLeft();
 		}
-	}
-	
+	}	
 
 	// Moves Karel Forward
 	private void startMoving(){
 		while(frontIsClear()){
 			move();
-			checkColumn();
 		}
 		// Once Karel becomes blocked, find out how he's being blocked
 		unblockKarel();
@@ -67,7 +63,7 @@ public class StoneMasonKarel extends SuperKarel {
 			}else if (facingEast() && frontIsBlocked()){
 				stop();
 			}
-		}//startMoving();
+		}startMoving();
 		
 	}
 	
