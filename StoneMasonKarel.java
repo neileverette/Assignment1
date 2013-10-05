@@ -15,7 +15,6 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){			
 		orientKarel();
 		moveForward();
-
 	}
 	
 	// Orients Karel in space
@@ -36,6 +35,9 @@ public class StoneMasonKarel extends SuperKarel {
 		boolean beepers = false;
 		
 		while(frontIsClear()){
+			if(beepersPresent()){
+				beepers = true;
+			}
 			move();
 		}
 		// At the end of a row, turn Karel around
@@ -43,8 +45,11 @@ public class StoneMasonKarel extends SuperKarel {
 		
 		// This sets up 2 paths for Karel, depending on if he encounters beepers
 		// First path is for no beepers
-
-		
+		if(beepers==false){
+			dontLayBeepers();
+		}else{
+			layBeepers();
+		}		
 	}
 
 	
