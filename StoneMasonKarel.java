@@ -58,15 +58,15 @@ public class StoneMasonKarel extends SuperKarel {
 		while(frontIsClear()){
 			// If beeper present, skip
 			if(beepersPresent()){
-				move();
+
 			// If beeper not present, lay one down
 			}else if(noBeepersPresent()){
 				putBeeper();
-				move();
 			}// Moves Karel to the next column
-			turnLeft();
+			
 			move();
 		}
+		turnLeft();
 	}
 }
 
