@@ -46,6 +46,12 @@ public class StoneMasonKarel extends SuperKarel {
 	private void unblockKarel(){
 		
 		//This checks to see if Karel is blocked while moving up/down
+		
+		if (facingEast() && frontIsBlocked()){
+			stop();
+		}
+		
+		
 		if(facingSouth() || facingNorth() ){
 			// Checks to see if Karel has blocks on top and right
 			if (frontIsBlocked() && rightIsBlocked()){
@@ -63,8 +69,6 @@ public class StoneMasonKarel extends SuperKarel {
 				}else if(facingSouth()){
 					sequence3();
 				}
-			}else if (facingEast() && frontIsBlocked()){
-				stop();
 			}
 		}startMoving();
 		
