@@ -51,7 +51,6 @@ public class StoneMasonKarel extends SuperKarel {
 			layBeepers();
 		}		
 	}
-
 	
 	// This functions is for empty rows
 	private void dontLayBeepers(){
@@ -90,10 +89,18 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	// This restarts the sequence of Karel going up a row
 	private void restartKarel(){
+		checkEndofRow();
 		turnLeft();
 		move();
 		turnLeft();
 		moveForward();
+	}
+	
+	// Check for end of row
+	private void checkEndofRow(){
+		if (facingEast() && frontIsClear()){
+			stop();
+		}
 	}
 }
 
