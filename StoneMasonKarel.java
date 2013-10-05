@@ -89,13 +89,14 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	// This restarts the sequence of Karel going up a row
 	private void restartKarel(){
+		turnLeft();
+		
 		// This checks to see if Karel is at the end row
 		if (facingEast() && frontIsBlocked()){
 			// If so, he stops
 			stop();
 			// Else, he restarts the sequence again
 		}else{
-			turnLeft();
 			move();
 			turnLeft();
 			moveForward();
