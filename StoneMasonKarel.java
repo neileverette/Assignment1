@@ -13,87 +13,14 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run(){
-		facingDirection();
-		startMoving();
+
 	}
 	
-	// Checks to see if Karel is in the proper direction
-	private void facingDirection(){
-		if(facingEast()){
-			turnLeft();
-		}else if (facingWest()){
+	private void orientKarel(){
+		if (facingEast() && leftIsBlocked()){
 			turnLeft();
 			turnLeft();
-		}
-	}	
-
-	// Moves Karel Forward
-	private void startMoving(){
-		while(frontIsClear()){
-			move();
-		}
-		// Once Karel becomes blocked, find out how he's being blocked
-		unblockKarel();
 	}
 	
-	// Check for column
-	private void checkColumn(){
-		if(beepersPresent()==true){	
-		}
 	}
-	
-	// Unblock Karel
-	private void unblockKarel(){
-		
-		//This checks to see if Karel is blocked while moving up/down
-		if (facingEast() && frontIsBlocked()){
-			stop();
-		}
-		
-		
-		if(facingSouth() || facingNorth() ){
-			// Checks to see if Karel has blocks on top and right
-			if (frontIsBlocked() && rightIsBlocked()){
-				sequence1();
-				
-			}else if(frontIsBlocked()){			
-				// Checks to see if Karel is pointing up
-				if(facingNorth()){
-					sequence2();
-					while(frontIsClear()){
-						move();
-					}
-					turnAround();
-				// Checks to see if Karel is pointing down
-				}else if(facingSouth()){
-					sequence3();
-				}
-			}
-		}startMoving();
-	}
-	
-	// Turns Karel around
-	private void sequence1(){
-		turnAround();
-		startMoving();
-	}
-	// Turns Karel around
-	private void sequence2(){
-		turnRight();
-		move();
-		turnLeft();
-	}
-	// Turns Karel around
-	private void sequence3(){
-		turnLeft();
-		if(frontIsClear()){
-			move();
-		}
-		turnLeft();
-		startMoving();
-	}
-
-	
-	// 
-
 }
