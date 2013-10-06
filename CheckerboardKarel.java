@@ -13,18 +13,20 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
 		
+		turnAround();
+		
 		// Start by adding 4 beepers to the middle of the square
-		putBeepersInMiddle();
+//		putBeepersInMiddle();
 		
 		// Then return Karel to home
-		returnKarelToStart();
+//		returnKarelToStart();
 		
 		// Move Karel to the pile of beepers
-		moveToBeepers();
+//		moveToBeepers();
 		
 		// Double the beepers
 		doubleBeepers();
-		
+//		
 		// Return Home
 //		returnKarelToStart();
 	}
