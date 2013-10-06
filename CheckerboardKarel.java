@@ -79,7 +79,7 @@ public class CheckerboardKarel extends SuperKarel {
 			pickUpBeeper();
 			// Put 2 beepers down on the next square
 			putTwoNextSquare();	
-			returnToPile();
+//			returnToPile();
 		}
 		// Put all the beepers back on the original square
 		putBeepersBack();
