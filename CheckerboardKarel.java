@@ -12,7 +12,7 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
-		
+		move();
 		turnAround();
 		
 		// Start by adding 4 beepers to the middle of the square
