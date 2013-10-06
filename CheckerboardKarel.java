@@ -67,13 +67,13 @@ public class CheckerboardKarel extends SuperKarel {
 	// Method to double the beepers in the original pile
 	private void doubleBeepers(){
 		
-		while(beepersPresent()){
+//		while(beepersPresent()){
 			// Pick up one beeper from the middle square
 			pickUpBeeper();
 			// Put 2 beepers down on the next square
 			putTwoNextSquare();	
-//			returnToPile();
-		}
+			returnToPile();
+//		}
 
 	}
 	
