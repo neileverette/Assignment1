@@ -19,6 +19,14 @@ public class CheckerboardKarel extends SuperKarel {
 		// Then return Karel to home
 		returnKarelToStart();
 		
+		// Move Karel to the pile of beepers
+		moveToBeepers();
+		
+		// Double the beepers
+//		doubleBeepers();
+		
+		// Return Home
+		returnKarelToStart();
 	}
 	
 	
@@ -53,4 +61,19 @@ public class CheckerboardKarel extends SuperKarel {
 			move();
 		}
 	}
+
+	// Move Karel to the pile of beepers
+	private void moveToBeepers(){
+		
+		// Move forward if the front is clear
+		while(frontIsClear()){
+			move();
+			
+			// Check to see if there is a beeper on this square
+			if(beepersPresent()){
+				stop();
+			}
+		}
+	}
+	
 }
