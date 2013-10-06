@@ -74,6 +74,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	// Method to double the beepers in the original pile
 	private void doubleBeepers(){
+		//moveAllBeepersOver();
 		
 	}
 }
