@@ -12,24 +12,14 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
-		
-		// Start by adding 4 beepers to the middle of the square
 		putBeepersInMiddle();
-		
-		// Then return Karel to home
 		returnKarelToStart();
-		
-		// Move Karel to the pile of beepers
 		moveToBeepers();
-		
-		// Double the beepers
 		doubleBeepers();
-		
-		// Return Home
 //		returnKarelToStart();
 	}
 	
-	
+	// This section sets up the conditions needed to start the program
 	// Adds 4 beepers to the middle of the square
 	private void putBeepersInMiddle(){
 		// Move Karel over 4 spots to the right
@@ -62,6 +52,9 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 
+	
+	
+	// This portion of the code is the real program
 	// Move Karel to the pile of beepers
 	private void moveToBeepers(){
 		
@@ -81,8 +74,7 @@ public class CheckerboardKarel extends SuperKarel {
 			putTwoNextSquare();	
 //			returnToPile();
 		}
-		// Put all the beepers back on the original square
-		putBeepersBack();
+
 	}
 	
 	// Puts all the beepers back to the original pile
