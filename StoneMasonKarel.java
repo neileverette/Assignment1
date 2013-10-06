@@ -22,7 +22,7 @@ public class StoneMasonKarel extends SuperKarel {
 		// This handles the initial state of Karel
 		if (facingEast() && frontIsClear()){
 			turnLeft();
-		// This handles the ending position	
+		// This handles the situation when Karel gets to the end of the sequence
 		}else if (facingEast() && rightIsBlocked()){
 			stop();
 		}
@@ -31,7 +31,7 @@ public class StoneMasonKarel extends SuperKarel {
 	// Moves Karel forward
 	private void moveForward(){
 		
-		// Set a boolean for column
+		// Set a boolean to detect if this row is a column
 		boolean beepers = false;
 		
 		while(frontIsClear()){
