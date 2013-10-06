@@ -17,7 +17,7 @@ public class CheckerboardKarel extends SuperKarel {
 		putBeepersInMiddle();
 		
 		// Then return Karel to home
-		
+		returnKarelToStart();
 		
 	}
 	
