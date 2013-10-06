@@ -69,15 +69,17 @@ public class CheckerboardKarel extends SuperKarel {
 		while(noBeepersPresent()){
 			move();
 			}
-		
 	}
 
 	// Method to double the beepers in the original pile
 	private void doubleBeepers(){
-		pickUpBeeper();
-		moveOverOne();
-		putDownBeeper();
-		returnToPile();	
+		
+		while(beepersPresent()){
+			pickUpBeeper();
+			moveOverOne();
+			putDownBeeper();
+			returnToPile();	
+		}
 	}
 	
 	// Tells Karel to pick up a beeper from the middle pile if beepers exist
