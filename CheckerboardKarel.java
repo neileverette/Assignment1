@@ -75,10 +75,23 @@ public class CheckerboardKarel extends SuperKarel {
 	private void doubleBeepers(){
 		
 		while(beepersPresent()){
+			// Pick up one beeper from the middle square
 			pickUpBeeper();
-			moveOverOne();
-			putDownBeeper();
-			returnToPile();	
+			// Put 2 beepers down on the next square
+			putTwoNextSquare();	
+		}
+		// Put all the beepers back on the original square
+		putBeepersBack();
+	}
+	
+	// Puts all the beepers back to the original pile
+	private void putBeepersBack(){
+		
+		while(beepersPresent()){
+			turnKarelAround();
+			pickBeeper();
+			move();
+			putBeeper();
 		}
 	}
 	
@@ -87,9 +100,10 @@ public class CheckerboardKarel extends SuperKarel {
 		pickBeeper();
 	}
 
-	// This moves Karel over one square
-	private void moveOverOne(){
+	// Puts 2 beepers down for every 1 picked up
+	private void putTwoNextSquare(){
 		move();
+		putDownBeeper();
 	}
 
 	// Enables Karen to put down 2 beepers 
