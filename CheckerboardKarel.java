@@ -66,14 +66,10 @@ public class CheckerboardKarel extends SuperKarel {
 	private void moveToBeepers(){
 		
 		// Move forward if the front is clear
-		while(frontIsClear()){
+		while(noBeepersPresent()){
 			move();
-			
-			// Check to see if there is a beeper on this square
-			if(beepersPresent()){
-				stop();
 			}
-		}
+		
 	}
 	
 }
