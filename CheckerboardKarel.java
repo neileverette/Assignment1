@@ -79,6 +79,7 @@ public class CheckerboardKarel extends SuperKarel {
 			pickUpBeeper();
 			// Put 2 beepers down on the next square
 			putTwoNextSquare();	
+			returnToPile();
 		}
 		// Put all the beepers back on the original square
 		putBeepersBack();
@@ -105,7 +106,7 @@ public class CheckerboardKarel extends SuperKarel {
 		move();
 		putDownBeeper();
 	}
-
+	
 	// Enables Karen to put down 2 beepers 
 	private void putDownBeeper(){
 		for (int i = 0; i < 3; i++){
