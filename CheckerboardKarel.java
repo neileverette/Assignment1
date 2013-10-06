@@ -26,7 +26,7 @@ public class CheckerboardKarel extends SuperKarel {
 //		doubleBeepers();
 		
 		// Return Home
-		returnKarelToStart();
+//		returnKarelToStart();
 	}
 	
 	
