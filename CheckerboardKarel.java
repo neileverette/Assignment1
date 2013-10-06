@@ -101,7 +101,7 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	// Enables Karen to put down 2 beepers 
 	private void putDownBeeper(){
-		for (int i = 0; i < 3; i++){
+		for (int i = 0; i < 2; i++){
 			putBeeper();
 		}
 	}
