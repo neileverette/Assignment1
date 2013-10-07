@@ -61,6 +61,19 @@ public class StoneMasonKarel extends SuperKarel {
 		}
 	}
 	
+	// This method fills the column with beepers
+	// It first detects if Karel is standing on a beeper
+	private void fillColumn(){
+		
+	}
+	
+	// This method simply moves Karel down to the bottom of the row
+	private void moveToBottom(){
+		while (frontIsClear()){
+			move();
+		}
+	}
+	
 }
 
 
