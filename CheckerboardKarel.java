@@ -76,7 +76,9 @@ public class CheckerboardKarel extends SuperKarel {
 		
 	// Tells Karel to pick up a beeper from the middle pile if beepers exist
 	private void pickUpBeepers(){
+		while(beepersPresent()){
 		pickBeeper();
+		}
 	}
 
 	// Puts 2 beepers down for every 1 picked up
@@ -103,6 +105,7 @@ public class CheckerboardKarel extends SuperKarel {
 	private void putBeepersBack(){
 		// Move Karel to the pile of beepers to the right of the original pile
 		move();
+		pickUpBeepers();
 	}
 
 }
