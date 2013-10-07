@@ -15,7 +15,7 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){			
 		turnKarelUp();
 		columnCheck();
-//		moveOver()
+		moveOver()
 	}
 	
 	// This will turn Karel up to start the sequence
@@ -37,12 +37,9 @@ public class StoneMasonKarel extends SuperKarel {
 				column = true;
 			}
 			// Move Karel one square up
-			move();
-			
+			move();			
 		}
-		
-		// Turn Karel around
-		turnKarelAround();
+
 		
 		// This section of code runs once Karel hits the end of the row
 		
@@ -66,7 +63,6 @@ public class StoneMasonKarel extends SuperKarel {
 		// Move Karel to the next row
 		moveToNextRow();
 	}
-	
 	
 	// Turn Karel around 180 degrees
 	private void turnKarelAround(){
@@ -111,6 +107,23 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 	}
 	
+	// This will move Karel over a row
+	private void moveOver(){
+		// Turn Karel around
+		turnKarelAround();
+		
+		// Check to see if Karel is at the end of all the rows
+		// If there is no wall in front of Karel, have him move forward
+		if (frontIsClear()){
+			move();
+		}else{
+			// If Karel is at the end, stop him
+			stop();
+		}
+		
+	}
+	
+
 }
 
 
