@@ -71,6 +71,7 @@ public class CheckerboardKarel extends SuperKarel {
 		putTwoNextSquare();
 		returnToPile();
 		}
+		putBeepersBack();
 	}
 		
 	// Tells Karel to pick up a beeper from the middle pile if beepers exist
