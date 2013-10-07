@@ -59,6 +59,9 @@ public class StoneMasonKarel extends SuperKarel {
 		if (column = false){
 			moveToBottom();
 		}
+		
+		// Go to the next row
+		moveToNextRow();
 	}
 	
 	// This method fills the column with beepers
@@ -72,6 +75,13 @@ public class StoneMasonKarel extends SuperKarel {
 		while (frontIsClear()){
 			move();
 		}
+	}
+	
+	// This move Karel to the next row
+	private void moveToNextRow(){
+		turnLeft();
+		move();
+		turnLeft();
 	}
 	
 }
