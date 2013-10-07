@@ -39,7 +39,11 @@ public class StoneMasonKarel extends SuperKarel {
 			}
 			// Move Karel one square up
 			move();
+			
 		}
+		
+		// Turn Karel around
+		turnKarelAround();
 		
 		// This section of code runs once Karel hits the end of the row
 		
@@ -63,6 +67,14 @@ public class StoneMasonKarel extends SuperKarel {
 		// Move Karel to the next row
 		moveToNextRow();
 	}
+	
+	
+	// Turn Karel around 180 degrees
+	private void turnKarelAround(){
+		turnLeft();
+		turnLeft();
+	}
+	
 	
 	// This method fills the column with beepers
 	// It first detects if Karel is standing on a beeper
