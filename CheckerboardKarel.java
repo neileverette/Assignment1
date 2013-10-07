@@ -80,6 +80,8 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	// Puts all the beepers back to the original pile
 	private void putBeepersBack(){
+		// Move Karel to the pile of beepers to the right of the original pile
+		move();
 		
 		while(beepersPresent()){
 			turnKarelAround();
