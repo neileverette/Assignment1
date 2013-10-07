@@ -59,9 +59,7 @@ public class StoneMasonKarel extends SuperKarel {
 		if (column = false){
 			//moveToBottom();
 		}
-		
-		// Move Karel to the next row
-		moveToNextRow();
+
 	}
 	
 	// Turn Karel around 180 degrees
