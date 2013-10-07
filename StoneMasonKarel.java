@@ -51,13 +51,13 @@ public class StoneMasonKarel extends SuperKarel {
 			
 		// Path A = Fill the column with Beepers
 		if (column = true){
-			fillColumn();
+			//fillColumn();
 		}
 		
 		
 		// Path B = Move Karel down to the bottom
 		if (column = false){
-			moveToBottom();
+			//moveToBottom();
 		}
 		
 		// Move Karel to the next row
