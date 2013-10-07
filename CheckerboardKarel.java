@@ -112,14 +112,6 @@ public class CheckerboardKarel extends SuperKarel {
 			move();
 		}
 	}
-	
-	// Puts Karel at his original location
-	private void returnKarelToOrigin(){
-		turnKarelAround();
-		moveToStartingPoint();
-		turnLeft();
-		turnLeft();
-	}
-	
+
 
 }
