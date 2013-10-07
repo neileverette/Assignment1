@@ -60,7 +60,7 @@ public class StoneMasonKarel extends SuperKarel {
 			moveToBottom();
 		}
 		
-		// Go to the next row
+		// Move Karel to the next row
 		moveToNextRow();
 	}
 	
