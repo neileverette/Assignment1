@@ -15,7 +15,7 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){			
 		turnKarelUp();
 		columnCheck();
-		moveOver();
+//		moveOver();
 	}
 	
 	// This will turn Karel up to start the sequence
