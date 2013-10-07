@@ -16,7 +16,7 @@ public class CheckerboardKarel extends SuperKarel {
 		returnKarelToStart();
 		moveToBeepers();
 		doubleBeepers();
-//		returnKarelToStart();
+		returnKarelToOrigin();
 	}
 	
 	// This section sets up the conditions needed to start the program
@@ -111,6 +111,10 @@ public class CheckerboardKarel extends SuperKarel {
 			putBeeper();
 			move();
 		}
+	}
+	
+	// Puts Karel at his original location
+	private void returnKarelToOrigin(){
 		turnKarelAround();
 		moveToStartingPoint();
 		turnLeft();
