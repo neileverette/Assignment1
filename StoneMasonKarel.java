@@ -26,9 +26,38 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	// This will check to see if the row is a "column"
 	private void columnCheck(){
+		
+		// This sets the row to be initially for a column
+		boolean column = false;
+		
 		//Check to see if these is a wall in front of Karel
 		while (frontIsClear()){
+			
+			// Check to see if Karel is on a beeper
+			if (beepersPresent()){
+				column = true;
+			}
+			// Move Karel one square up
 			move();
+		}
+		
+		// This section of code runs once Karel hits the end of the row
+		
+		// When Karel hits the end of the wall move down
+		// There are two paths
+		// Path A if the row is a "column"
+		// Path B if the row is not a "column"
+	
+			
+		// Path A = Fill the column with Beepers
+		if (column = true){
+			fillColumn();
+		}
+		
+		
+		// Path B = Move Karel down to the bottom
+		if (column = false){
+			moveToBottom();
 		}
 	}
 	
