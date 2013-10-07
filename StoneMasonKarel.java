@@ -13,7 +13,23 @@ import stanford.karel.*;
 public class StoneMasonKarel extends SuperKarel {
 
 	public void run(){			
-
+		turnKarelUp();
+		columnCheck();
+		moveDown();
+//		moveOver()
+	}
+	
+	// This will turn Karel up to start the sequence
+	private void turnKarelUp(){
+		turnLeft();
+	}
+	
+	// This will check to see if the row is a "column"
+	private void columnCheck(){
+		//Check to see if these is a wall in front of Karel
+		while (frontIsClear()){
+			move();
+		}
 	}
 	
 }
