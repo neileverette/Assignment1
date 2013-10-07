@@ -75,7 +75,7 @@ public class CheckerboardKarel extends SuperKarel {
 			returnToPile();
 		}
 		// Put the beepers back on the orignal pile
-		putBeepersBack();
+		//putBeepersBack();
 
 	}
 	
