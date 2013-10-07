@@ -85,11 +85,16 @@ public class StoneMasonKarel extends SuperKarel {
 			
 			// This checks to see if a beeper is present
 			// If Karel is not on a beeper, it moves puts beeper
-			
 			if (noBeepersPresent()){
 				putBeeper();
 			}
 			move();
+			
+			// This handles the end of the line issue if the last block of the row is empty
+			// If the last block in the row is empty, Karel places a block before moving to the next row
+			if (noBeepersPresent()){
+				putBeeper();
+			}
 		}
 	}
 	
