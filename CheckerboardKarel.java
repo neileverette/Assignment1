@@ -16,7 +16,7 @@ public class CheckerboardKarel extends SuperKarel {
 		returnKarelToStart();
 		moveToBeepers();
 		doubleBeepers();
-		returnKarelToStart();
+//		returnKarelToStart();
 	}
 	
 	// This section sets up the conditions needed to start the program
