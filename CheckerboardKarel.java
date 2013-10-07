@@ -76,7 +76,7 @@ public class CheckerboardKarel extends SuperKarel {
 		
 	// Tells Karel to pick up a beeper from the middle pile if beepers exist
 	private void pickUpBeepers(){
-		while(beepersPresent()){
+		if(beepersPresent()){
 		pickBeeper();
 		}
 	}
