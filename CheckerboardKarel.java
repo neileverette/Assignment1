@@ -109,7 +109,7 @@ public class CheckerboardKarel extends SuperKarel {
 			pickUpBeepers();
 			returnToPile();
 			putBeeper();
-			returnToPile();
+			move();
 		}
 
 	}
