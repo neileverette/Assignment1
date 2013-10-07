@@ -74,7 +74,6 @@ public class CheckerboardKarel extends SuperKarel {
 			putTwoNextSquare();	
 			returnToPile();
 		}
-		returnKarelToStart();
 
 	}
 	
