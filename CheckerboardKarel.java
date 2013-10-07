@@ -105,11 +105,13 @@ public class CheckerboardKarel extends SuperKarel {
 	private void putBeepersBack(){
 		// Move Karel to the pile of beepers to the right of the original pile
 		move();
-		pickUpBeepers();
-		returnToPile();
-		putBeeper();
-		move();
-		pickUpBeepers();
+		while(beepersPresent()){
+			pickUpBeepers();
+			returnToPile();
+			putBeeper();
+			returnToPile();
+		}
+
 	}
 
 }
