@@ -82,6 +82,10 @@ public class StoneMasonKarel extends SuperKarel {
 		
 		// Move Karel down to the bottom of the screen
 		while (frontIsClear()){
+			
+			// This checks to see if a beeper is present
+			// If Karel is not on a beeper, it moves puts beeper
+			
 			if (beepersPresent()){
 				putBeeper();
 			}
