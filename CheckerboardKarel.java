@@ -113,6 +113,8 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		turnKarelAround();
 		moveToStartingPoint();
+		turnLeft();
+		turnLeft();
 	}
 	
 
