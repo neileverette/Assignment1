@@ -14,7 +14,8 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run(){
 		goDownRow();
 		//dropBeepers();
-		turnAround();
+		goUpRow();
+
 	}
 	
 	// Makes Karel go down a row
@@ -23,9 +24,19 @@ public class CheckerboardKarel extends SuperKarel {
 			move();
 			putBeeper();
 			
+			// Check to see if a wall is in front of Karel
 			if(frontIsClear()){
 			move();
 			}
 		}
 	}
+	
+	// Moves Karel up one row
+	private void goUpRow(){
+		turnLeft();
+		move();
+		turnLeft();
+		
+	}
+	
 }
