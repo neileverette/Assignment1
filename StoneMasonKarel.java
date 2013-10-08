@@ -15,8 +15,10 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){			
 		turnKarelUp();
 		columnCheck();
-//		moveOver();
+		moveOver();
 	}
+	
+	// This section contains the referenced methods
 	
 	// This will turn Karel up to start the sequence
 	private void turnKarelUp(){
@@ -29,14 +31,14 @@ public class StoneMasonKarel extends SuperKarel {
 		moveKarelUp();
 		
 	}
-	
-	
+
 	// Moves Karel up a column
 	public void moveKarelUp(){
 		
 		// Set the intial value of column to No/False
 		boolean column = false;
 		
+		// Checks to make sure there are no walls in front of Karel
 		while(frontIsClear()){
 			
 			// Check to see if a beeper is present
@@ -49,6 +51,8 @@ public class StoneMasonKarel extends SuperKarel {
 		if(column = true){
 			turnKarelAround();
 			fillColumn();
+		}else{
+			moveToBottom();
 		}
 	}
 	
@@ -58,9 +62,7 @@ public class StoneMasonKarel extends SuperKarel {
 		turnLeft();
 	}
 	
-	
-	// This method fills the column with beepers
-	// It first detects if Karel is standing on a beeper
+	// This fills in the missing gap of identified columns
 	private void fillColumn(){
 		
 		// Move Karel down to the bottom of the screen
