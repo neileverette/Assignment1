@@ -22,7 +22,10 @@ public class CheckerboardKarel extends SuperKarel {
 		while (frontIsClear()){
 			move();
 			putBeeper();
+			
+			if(frontIsClear()){
 			move();
+			}
 		}
 	}
 }
