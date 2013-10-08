@@ -99,6 +99,7 @@ public class StoneMasonKarel extends SuperKarel {
 			columnCheck();
 			moveToNextRow();
 		}
+		stop();
 	}
 	
 	// This will move Karel over a row
