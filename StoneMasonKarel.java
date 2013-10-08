@@ -15,7 +15,7 @@ public class StoneMasonKarel extends SuperKarel {
 	public void run(){			
 		turnKarelUp();
 		columnCheck();
-		moveToNextRow()
+		moveToNextRow();
 	}
 	
 	// This section contains the referenced methods
