@@ -27,8 +27,6 @@ public class StoneMasonKarel extends SuperKarel {
 	private void columnCheck(){
 		
 		moveKarelUp();
-		turnKarelAround();
-		
 		
 	}
 	
@@ -40,7 +38,18 @@ public class StoneMasonKarel extends SuperKarel {
 		boolean column = false;
 		
 		while(frontIsClear()){
+			
+			// Check to see if a beeper is present
+			if(beepersPresent()){
+				column = true;
+			}
 			move();
+			
+			// This chooses the path down to either just move down, or to fill the row with beepers
+			if(column = true){
+				turnKarelAround();
+				moveToBottom();
+			}
 		}
 	}
 	
