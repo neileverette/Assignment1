@@ -48,7 +48,7 @@ public class StoneMasonKarel extends SuperKarel {
 		// This chooses the path down to either just move down, or to fill the row with beepers
 		if(column = true){
 			turnKarelAround();
-			moveToBottom();
+			fillColumn();
 		}
 	}
 	
