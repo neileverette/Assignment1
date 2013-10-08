@@ -50,6 +50,7 @@ public class StoneMasonKarel extends SuperKarel {
 			turnKarelAround();
 			fillColumn();
 		}else{
+			turnKarelAround();
 			moveToBottom();
 		}
 	}
