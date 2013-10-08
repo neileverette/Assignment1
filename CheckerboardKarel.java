@@ -38,14 +38,24 @@ public class CheckerboardKarel extends SuperKarel {
 	// Moves Karel up one row at the end of a right row
 	private void goUpRowRight(){
 		turnLeft();
-		move();
+		
+		// Check to see if wall is in front of Karel
+		if(frontIsClear()){
+			move();
+		}
+		
 		turnLeft();
 	}
 	
 	// Moves Karel up one row at the end of a left row
 	private void goUpRowLeft(){
 		flipKarel();
-		move();
+		
+		// Check to see if wall is in front of Karel
+		if(frontIsClear()){
+			move();
+		}
+		
 		flipKarel();
 	}
 	
