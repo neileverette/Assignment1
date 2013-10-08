@@ -92,9 +92,11 @@ public class StoneMasonKarel extends SuperKarel {
 	private void moveToNextRow(){		
 		turnLeft();
 		
-		if(frontIsClear()){
+		while (frontIsClear()){
 			move();
 			turnLeft();
+			columnCheck();
+			moveToNextRow();
 		}
 	}
 	
