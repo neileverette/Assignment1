@@ -102,21 +102,7 @@ public class StoneMasonKarel extends SuperKarel {
 		stop();
 	}
 	
-	// This will move Karel over a row
-	private void moveOver(){
-		// Turn Karel around
-		turnKarelAround();
-		
-		// Check to see if Karel is at the end of all the rows
-		// If there is no wall in front of Karel, have him move forward
-		if (frontIsClear()){
-			move();
-		}else{
-			// If Karel is at the end, stop him
-			stop();
-		}
-		
-	}
+
 	
 
 }
