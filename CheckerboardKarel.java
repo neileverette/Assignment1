@@ -70,7 +70,7 @@ public class CheckerboardKarel extends SuperKarel {
 	// Put down a beeper if one isn't present
 	private void putDownBeeper(){
 		// Check to see if beeper is on square
-		if(noBeeperPresent()){
+		if(noBeepersPresent()){
 			putBeeper();
 		}
 	}
