@@ -34,7 +34,11 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	
 	// Moves Karel up a column
-	private void moveKarelUp(){
+	public void moveKarelUp(){
+		
+		// Set the intial value of column to No/False
+		boolean column = false;
+		
 		while(frontIsClear()){
 			move();
 		}
