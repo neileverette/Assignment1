@@ -44,11 +44,15 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	// Moves Karel up one row at the end of a left row
 	private void goUpRowLeft(){
-		turnLeft();
-		turnLeft();
-		turnLeft();
+		flipKarel();
 		move();
-		turnLeft();
+		flipKarel();
 	}
 	
+	// Flip Karel around 180 degrees
+	private void flipKarel(){
+		turnLeft();
+		turnLeft();
+		turnLeft();
+	}
 }
