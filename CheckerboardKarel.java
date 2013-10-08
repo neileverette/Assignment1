@@ -17,6 +17,7 @@ public class CheckerboardKarel extends SuperKarel {
 		goDownRow();
 		goUpRowRight();
 		goDownRow();
+		goUpRowLeft();
 //		}
 
 	}
