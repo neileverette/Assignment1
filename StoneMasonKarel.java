@@ -44,12 +44,11 @@ public class StoneMasonKarel extends SuperKarel {
 				column = true;
 			}
 			move();
-			
-			// This chooses the path down to either just move down, or to fill the row with beepers
-			if(column = true){
-				turnKarelAround();
-				moveToBottom();
-			}
+		}
+		// This chooses the path down to either just move down, or to fill the row with beepers
+		if(column = true){
+			turnKarelAround();
+			moveToBottom();
 		}
 	}
 	
