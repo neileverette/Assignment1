@@ -27,13 +27,11 @@ public class StoneMasonKarel extends SuperKarel {
 	
 	// This will check to see if the row is a "column"
 	private void columnCheck(){
-		
 		moveKarelUp();
-		
 	}
 
 	// Moves Karel up a column
-	public void moveKarelUp(){
+	private void moveKarelUp(){
 		
 		// Set the intial value of column to No/False
 		boolean column = false;
@@ -91,10 +89,13 @@ public class StoneMasonKarel extends SuperKarel {
 	}
 	
 	// This move Karel to the next row
-	private void moveToNextRow(){
+	private void moveToNextRow(){		
 		turnLeft();
-		move();
-		turnLeft();
+		
+		if(frontIsClear()){
+			move();
+			turnLeft();
+		}
 	}
 	
 	// This will move Karel over a row
