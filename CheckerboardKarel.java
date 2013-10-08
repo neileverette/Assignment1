@@ -15,7 +15,7 @@ public class CheckerboardKarel extends SuperKarel {
 		
 		while(frontIsClear()){
 		goDownRow();
-		goUpRow();
+		goUpRowRight();
 		}
 
 	}
@@ -33,12 +33,20 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 	
-	// Moves Karel up one row
-	private void goUpRow(){
+	// Moves Karel up one row at the end of a right row
+	private void goUpRowRight(){
 		turnLeft();
 		move();
 		turnLeft();
-		
+	}
+	
+	// Moves Karel up one row at the end of a left row
+	private void goUpRowLeft(){
+		turnLeft();
+		turnLeft();
+		turnLeft();
+		move();
+		turnLeft();
 	}
 	
 }
