@@ -13,7 +13,7 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
 		goDownRow();
-		dropBeepers();
+		//dropBeepers();
 		turnAround();
 	}
 	
