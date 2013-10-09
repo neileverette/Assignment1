@@ -62,6 +62,5 @@ public class CheckerboardKarel extends SuperKarel {
 			stop();
 		}
 	}
-	
 
 }
