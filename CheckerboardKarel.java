@@ -73,6 +73,11 @@ public class CheckerboardKarel extends SuperKarel {
 	private void orientKarel(){
 		if (rightIsBlocked()){
 		turnLeft();
+		}else{
+			turnLeft();
+			turnLeft();
+			turnLeft();
+			
 		}
 	}
 }
