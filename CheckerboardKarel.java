@@ -12,8 +12,10 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
+		while(frontIsClear()){
 		goDownRow();
 		turnKarelAround();
+			}
 		}
 	
 	// Moves Karel down row while dropping beepers
