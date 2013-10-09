@@ -43,9 +43,6 @@ public class CheckerboardKarel extends SuperKarel {
 		// Make Karel go up one row
 		goUpARow();
 		
-
-		
-
 	}
 	// Makes Karel go up a row
 	private void goUpARow(){
@@ -66,7 +63,5 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 	
-	
-
 
 }
