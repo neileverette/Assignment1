@@ -58,9 +58,11 @@ public class CheckerboardKarel extends SuperKarel {
 		if(facingEast()){
 			turnLeft();
 		}else{
-			turnLeft();
-			turnLeft();
-			turnLeft();
+			if(frontIsClear()){
+				turnLeft();
+				turnLeft();
+				turnLeft();
+			}
 		}
 		
 		// This checks to see if a wall is in the way
