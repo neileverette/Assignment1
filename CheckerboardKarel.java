@@ -45,10 +45,12 @@ public class CheckerboardKarel extends SuperKarel {
 		
 		// Make Karel go up one row
 		goUpARow();
+		
 		// Positions Karel in the right/left direction
 		orientKarel();
 
 	}
+	
 	// Makes Karel go up a row
 	private void goUpARow(){
 		
