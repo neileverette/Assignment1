@@ -54,6 +54,7 @@ public class CheckerboardKarel extends SuperKarel {
 		}else{
 			turnLeft();
 			turnLeft();
+			turnLeft();
 		}
 		
 		// This checks to see if a wall is in the way
@@ -66,6 +67,6 @@ public class CheckerboardKarel extends SuperKarel {
 
 	// Orients Karel in the correct direction
 	private void orientKarel(){
-		
+		turnLeft();
 	}
 }
