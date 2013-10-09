@@ -40,6 +40,16 @@ public class CheckerboardKarel extends SuperKarel {
 	// Turn Karel Around
 	private void turnKarelAround(){
 		
+		// Make Karel go up one row
+		goUpARow();
+		
+
+		
+
+	}
+	// Makes Karel go up a row
+	private void goUpARow(){
+		
 		// This checks to see in which direction Karel is heading
 		if(facingEast()){
 			turnLeft();
@@ -55,6 +65,8 @@ public class CheckerboardKarel extends SuperKarel {
 			stop();
 		}
 	}
+	
+	
 
 
 }
