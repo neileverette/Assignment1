@@ -16,12 +16,10 @@ public class CheckerboardKarel extends SuperKarel {
 		// Run this loop until all the blocks are filled in
 		while(frontIsClear() && leftIsClear()){
 			
-			// Check to see if Karel is at the top row
-			checkTopRow();
-			
 			// Sends Karel hapily down a row
 			goDownRow();
-					
+				
+			// Turns Karel Around
 			turnKarelAround();
 			}
 		}
@@ -55,11 +53,6 @@ public class CheckerboardKarel extends SuperKarel {
 		// Positions Karel in the right/left direction
 		orientKarel();
 
-	}
-	
-	// This checks to see if Karel is at the top row
-	private void checkTopRow(){
-		
 	}
 	
 	// Makes Karel go up a row
