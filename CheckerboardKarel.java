@@ -12,9 +12,11 @@ import stanford.karel.*;
 public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
+		
+		// Run this loop until all the blocks are filled in
 		while(frontIsClear()){
-		goDownRow();
-		turnKarelAround();
+			goDownRow();
+			turnKarelAround();
 			}
 		}
 	
@@ -69,6 +71,8 @@ public class CheckerboardKarel extends SuperKarel {
 
 	// Orients Karel in the correct direction
 	private void orientKarel(){
+		if (rightIsBlocked()){
 		turnLeft();
+		}
 	}
 }
