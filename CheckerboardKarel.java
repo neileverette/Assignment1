@@ -13,65 +13,48 @@ public class CheckerboardKarel extends SuperKarel {
 
 	public void run(){
 		
-		while(frontIsClear()){
 		goDownRow();
-		goUpRowRight();
-		goDownRow();
-		goUpRowLeft();
+		turnKarelAround();
 		}
-
-	}
 	
-	// Makes Karel go down a row
+	// Moves Karel down row while dropping beepers
 	private void goDownRow(){
-		
-		// Move down the row and put beepers down at every other square
-		while (frontIsClear()){
+		while(frontIsClear()){
 			move();
-			putDownBeeper();
+			dropABeeper();
 			
-			// Check to see if a wall is in front of Karel
 			if(frontIsClear()){
-			move();
+				move();
 			}
 		}
 	}
 	
-	// Moves Karel up one row at the end of a right row
-	private void goUpRowRight(){
-		turnLeft();
-		
-		// Check to see if wall is in front of Karel
-		if(frontIsClear()){
-			move();
-		}
-		turnLeft();
-	}
-	
-	// Moves Karel up one row at the end of a left row
-	private void goUpRowLeft(){
-		flipKarel();
-		
-		// Check to see if wall is in front of Karel
-		if(frontIsClear()){
-			move();
-		}
-		
-		flipKarel();
-	}
-	
-	// Flip Karel around 180 degrees
-	private void flipKarel(){
-		turnLeft();
-		turnLeft();
-		turnLeft();
-	}
-
-	// Put down a beeper if one isn't present
-	private void putDownBeeper(){
-		// Check to see if beeper is on square
-		if(noBeepersPresent()){
+	// Makes Karel drop beepers 
+	private void dropABeeper(){
+		// Check to see if a beeper is present
+		if (noBeepersPresent()){
 			putBeeper();
 		}
 	}
+
+	// Turn Karel Around
+	private void turnKarelAround(){
+		
+		// This checks to see in which direction Karel is heading
+		if(facingEast()){
+			turnLeft();
+		}else{
+			turnLeft();
+			turnLeft();
+		}
+		
+		// This checks to see if a wall is in the way
+		if(frontIsClear()){
+			move();
+		}else{
+			stop();
+		}
+	}
+
+
 }
