@@ -31,13 +31,16 @@ public class MidpointFindingKarel extends SuperKarel {
 		// Set a variable for the square mid point
 		int midpoint = length/2;
 		
-		// Loop to drop beeper in the middle
+		// Move Karel to the middle of the square
 		for(int i=0; i< midpoint; i++){
 			move();
 		}
 		
 		// Drop a beeper
 		putBeeper();
+		
+		// Turn Karel back around
+		turnKarelAround();
 		
 	}
 
@@ -46,9 +49,5 @@ public class MidpointFindingKarel extends SuperKarel {
 		turnLeft();
 		turnLeft();
 	}
-	
-	
-	private void dropBeeperInMiddle(){
-		
-	}
+
 }
