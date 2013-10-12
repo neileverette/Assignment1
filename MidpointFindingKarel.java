@@ -16,34 +16,31 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	public void run(){
 
-		
-		while(frontIsClear()){
 		// GoDownSide();
 		goDownSide();
-		
+			
 		//countSteps();
-		turnKarelLeft();
-		}
+		turnKarelAround();
+		
+		// Drop the beeper in the middle
+	//	dropBeeperInMiddle();
+	
 
 	}
 
 	private void goDownSide(){
 		
-		// Variable to count the steps of Karel
-		int steps = 1;
+		// Move Karel Down the row
 		
-		// Move Karel down the side
 		while(frontIsClear()){
 			move();
-			
-			// Count the steps that Karel takes
-			steps++;	
 		}
+		
 	}
 	
-	private void turnKarelLeft(){
+	private void turnKarelAround(){
 		turnLeft();
-		goDownSide();
+		turnLeft();
 	}
 	
 }
