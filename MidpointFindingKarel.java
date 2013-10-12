@@ -18,8 +18,9 @@ public class MidpointFindingKarel extends SuperKarel {
 
 		// GoDownSide();
 		goDownSide();
+		
 		//countSteps();
-		turnLeft();
+		turnKarelLeft();
 
 	}
 
@@ -35,6 +36,11 @@ public class MidpointFindingKarel extends SuperKarel {
 			// Count the steps that Karel takes
 			steps++;	
 		}
+	}
+	
+	private void turnKarelLeft(){
+		turnLeft();
+		goDownSide();
 	}
 	
 }
