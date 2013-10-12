@@ -23,8 +23,6 @@ public class MidpointFindingKarel extends SuperKarel {
 		while (frontIsClear()){
 			move();
 			length++;
-			putBeeper();
-			pickBeeper();
 		}
 			
 		// After Karel goes down a side, turn around so that he can put down the beeper
