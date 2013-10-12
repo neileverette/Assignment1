@@ -16,11 +16,14 @@ public class MidpointFindingKarel extends SuperKarel {
 
 	public void run(){
 
+		
+		while(frontIsClear()){
 		// GoDownSide();
 		goDownSide();
 		
 		//countSteps();
 		turnKarelLeft();
+		}
 
 	}
 
