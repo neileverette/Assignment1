@@ -14,6 +14,27 @@ import stanford.karel.*;
 
 public class MidpointFindingKarel extends SuperKarel {
 
-	// You fill in this part
+	public void run(){
 
+		// GoDownSide();
+		goDownSide();
+		//countSteps();
+		turnLeft();
+
+	}
+
+	private void goDownSide(){
+		
+		// Variable to count the steps of Karel
+		int steps = 1;
+		
+		// Move Karel down the side
+		while(frontIsClear()){
+			move();
+			
+			// Count the steps that Karel takes
+			steps++;	
+		}
+	}
+	
 }
