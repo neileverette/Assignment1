@@ -15,32 +15,40 @@ import stanford.karel.*;
 public class MidpointFindingKarel extends SuperKarel {
 
 	public void run(){
-
-		// GoDownSide();
-		goDownSide();
+		
+		// Set a variable to count the length of the square
+		int length=1;
+		
+		// Go down the length of the square
+		while (frontIsClear()){
+			move();
+			length++;
+		}
 			
-		//countSteps();
+		// After Karel goes down a side, turn around so that he can put down the beeper
 		turnKarelAround();
 		
-		// Drop the beeper in the middle
-	//	dropBeeperInMiddle();
-	
-
-	}
-
-	private void goDownSide(){
+		// Set a variable for the square mid point
+		int midpoint = length/2;
 		
-		// Move Karel Down the row
-		
-		while(frontIsClear()){
+		// Loop to drop beeper in the middle
+		for(int i=0; i< midpoint; i++){
 			move();
 		}
 		
+		// Drop a beeper
+		putBeeper();
+		
 	}
+
 	
 	private void turnKarelAround(){
 		turnLeft();
 		turnLeft();
 	}
 	
+	
+	private void dropBeeperInMiddle(){
+		
+	}
 }
